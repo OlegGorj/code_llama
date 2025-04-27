@@ -1,0 +1,18 @@
+# torch
+# fairscale
+# fire
+# sentencepiece
+
+# torch>=2.2.0
+# fairscale>=0.4.13
+# fire>=0.5.0
+# sentencepiece>=0.1.99
+# numpy<2.0.0
+
+torch==2.2.0 ; platform_system == "Darwin"
+torchvision==0.17.0 ; platform_system == "Darwin"
+torchaudio==2.2.0 ; platform_system == "Darwin"
+fairscale>=0.4.13
+fire>=0.5.0
+sentencepiece>=0.1.99
+numpy==1.24.3

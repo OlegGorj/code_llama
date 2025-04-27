@@ -1,0 +1,29 @@
+[project]
+name = "code_llama"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+# If you want to use Poetry only for dependency management but not for packaging, you can disable package mode by setting package-mode = false
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+numpy = "1.24.3"
+torch = { version = "2.2.0", platform = "darwin", source = "pypi" }
+torchvision = { version = "0.17.0", platform = "darwin", source = "pypi" }
+torchaudio = { version = "2.2.0", platform = "darwin", source = "pypi" }
+fairscale = "^0.4.13"
+fire = "^0.5.0"
+sentencepiece = "^0.1.99"
+typing_extensions = "^4.0.0"
+
+[[tool.poetry.source]]
+name = "pypi"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
